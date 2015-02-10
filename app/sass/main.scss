@@ -1,0 +1,30 @@
+$height-top-nav: 50px;
+$footer-link-col-count: 2;
+
+.navmenu-fixed-right {
+  >.navmenu-nav {
+    margin-top: $height-top-nav;
+  }
+}
+.footer {
+  ul.menu-footer {
+    list-style: none;
+    padding-left: 0;
+    float: left;
+    width: 100%;
+    li.menu-item-has-children {
+      width: 1/$footer-link-col-count * 100%;
+      float:left;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        float: left;
+        width: 100%;
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
