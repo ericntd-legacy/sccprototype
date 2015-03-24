@@ -1,17 +1,6 @@
 $height-top-nav: 50px;
 $footer-link-col-count: 2;
 
-.container {
-  .navbar-fixed-top {
-    height: 50px !important;
-    overflow: hidden !important;
-  }
-}
-.navmenu-fixed-right {
-  >.navmenu-nav {
-    margin-top: $height-top-nav;
-  }
-}
 .footer {
   ul.menu-footer {
     list-style: none;

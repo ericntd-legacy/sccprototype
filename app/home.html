@@ -7,8 +7,10 @@
   <title>Bootstrap 101 Template</title>
 
   <!-- Bootstrap -->
-  <link href="../dist/css/bootstrap.css" rel="stylesheet">
-  <link href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css" rel="stylesheet">
+  <!-- <link href="../dist/css/bootstrap.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <!-- <link href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,70 +21,40 @@
   <![endif]-->
 </head>
 <body>
-  <div class="navmenu navmenu-default navmenu-fixed-right offcanvas-sm hidden-md hidden-lg" desc="this side nav menu only shows when toggled">
-    <!-- <a class="navmenu-brand visible-md visible-lg" href="#">SCC 3</a> -->
-    <ul class="nav navmenu-nav">
-      <li class="active"><a href="./">Home</a></li>
-      <li><a href="./">Membership</a></li>
-      <li><a href="../navmenu-push/">Facilities</a></li>
-      <li><a href="../navmenu-reveal/">Sports</a></li>
-      <li><a href="../navbar-offcanvas/">Social Events</a></li>
-      <!-- </ul>
-      <ul class="nav navmenu-nav"> -->
-      <li><a href="#">F&amp;B</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Career</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
-        <ul class="dropdown-menu navmenu-nav">
-          <li><a href="#">Sports</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Social Events</a></li>
-
-          <!-- <li class="dropdown-header">Nav header</li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li> -->
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg" style="z-index:1050">
-    <button type="button" class="navbar-toggle visible-sm visible-xs" data-toggle="offcanvas" data-target=".navmenu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">SCC 2</a>
-  </div>
   <div class="container">
-    <div class="navbar navbar-fixed-top container" desc="Static navbar">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="#">SCC 1</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse" desc="navigation menu">
-      <!-- <a class="navmenu-brand" href="#">Project name 3</a> -->
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./">Home</a></li>
-        <li><a href="./">Membership</a></li>
-        <li><a href="../navmenu-push/">Facilities</a></li>
-        <li><a href="../navmenu-reveal/">Sports</a></li>
-        <li><a href="../navbar-offcanvas/">Social Events</a></li>
-      </ul>
-      <ul class="nav navbar-nav">
-        <li><a href="#">F&amp;B</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Career</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
-          <ul class="dropdown-menu navmenu-nav">
-            <li><a href="#">Sports Events</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Social Events</a></li>
+    <!-- Static navbar -->
+      <div class="navbar navbar-fixed-top navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Project name</a> -->
+        </div>
+        <div class="navbar-offcanvas offcanvas">
+          <a class="navmenu-brand" href="#">Project name</a>
+          <ul class="nav navbar-nav">
+            <li><a href="../navmenu/">Slide in</a></li>
+            <li><a href="../navmenu-push/">Push</a></li>
+            <li><a href="../navmenu-reveal">Reveal</a></li>
+            <li class="active"><a href="./">Off canvas navbar</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+        </div><!--/.nav-collapse -->
+      </div>
+
   <!-- Main component for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="row">
@@ -165,9 +137,11 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../dist/js/bootstrap.min.js"></script>
-<script src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
-<script src="../bower_components/jasny-bootstrap/js/offcanvas.js"></script>
+<!-- <script src="../dist/js/bootstrap.min.js"></script> -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- <script src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script> -->
+
+<!-- <script src="../bower_components/jasny-bootstrap/js/offcanvas.js"></script> -->
 
 <!-- Grunt live reload -->
 <script src="http://localhost:35729/livereload.js"></script>
