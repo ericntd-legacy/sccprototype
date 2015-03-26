@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="../dist/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="../dist/css/offcanvas1.css" type="text/css"/>
+  <link rel="stylesheet" href="../dist/css/dropdown.css" type="text/css"/>
   <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
@@ -29,9 +30,9 @@
               <li><a href="#">Link</a></li>
               <li><a href="#">More</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Dropdown <b class="caret"></b></a>
+                <a href="http://google.com" class="dropdown-toggle disabled" data-toggle="dropdown" aria-expanded="true">Main Action <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
+                  <li class="main-action"><a href="#">Main Action</a></li>
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
@@ -102,6 +103,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="../dist/js/bootstrap.min.js"></script>
   <script src="../dist/js/offcanvas1.js"></script>
+  <script src="../dist/js/dropdown.js"></script>
 
   <!-- Grunt live reload -->
 </body>

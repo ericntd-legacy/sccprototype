@@ -173,30 +173,30 @@ module.exports = function (grunt) {
         }]
       }
     },
-    // less: {
-    //   compileCore: {
-    //     options: {
-    //       strictMath: true,
-    //       sourceMap: true,
-    //       outputSourceFiles: true,
-    //       sourceMapURL: '<%= pkg.name %>.css.map',
-    //       sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
-    //     },
-    //     src: 'less/bootstrap.less',
-    //     dest: 'dist/css/<%= pkg.name %>.css'
-    //   },
-    //   compileTheme: {
-    //     options: {
-    //       strictMath: true,
-    //       sourceMap: true,
-    //       outputSourceFiles: true,
-    //       sourceMapURL: '<%= pkg.name %>-theme.css.map',
-    //       sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
-    //     },
-    //     src: 'less/theme.less',
-    //     dest: 'dist/css/<%= pkg.name %>-theme.css'
-    //   }
-    // },
+    less: {
+      compileCore: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: '<%= pkg.name %>.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+        },
+        src: 'less/bootstrap.less',
+        dest: 'dist/css/<%= pkg.name %>.css'
+      },
+      compileTheme: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: '<%= pkg.name %>-theme.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
+        },
+        src: 'less/theme.less',
+        dest: 'dist/css/<%= pkg.name %>-theme.css'
+      }
+    },
 
     autoprefixer: {
       options: {
@@ -396,10 +396,10 @@ module.exports = function (grunt) {
         tasks: ['sass', 'autoprefixer', 'cssmin:local']
         // tasks: ['sass']
       },
-      // less: {
-      //   files: 'less/**/*.less',
-      //   tasks: 'less'
-      // },
+      less: {
+        files: 'less/**/*.less',
+        tasks: 'less'
+      },
       livereload: {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading

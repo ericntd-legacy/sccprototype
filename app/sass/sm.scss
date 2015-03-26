@@ -1,0 +1,45 @@
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (max-width : 992px) {
+
+        }
+
+        /* Small Devices, Tablets */
+        @media screen and (max-width : 768px) {
+          // .navbar-toggle {
+          //   display: block;
+          // }
+          .row-offcanvas {
+            .navbar {
+              width: 0;
+            }
+            .content {
+              width: 100%;
+            }
+          }
+          .row-offcanvas-right.active {
+              left: 0;
+              .navbar {
+                right:0;
+                width: 70%;
+              }
+          }
+        }
+
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+
+        }
+
+        /* Custom, iPhone Retina */
+        @media only screen and (max-width : 320px) {
+
+        }

@@ -13,15 +13,3 @@
       width: 100%; }
       .footer ul.menu-footer li.menu-item-has-children ul li {
         width: 100%; }
-
-@media screen and (max-width: 768px) {
-  .row-offcanvas .navbar {
-    width: 0; }
-  .row-offcanvas .content {
-    width: 100%; }
-
-  .row-offcanvas-right.active {
-    left: 0; }
-    .row-offcanvas-right.active .navbar {
-      right: 0;
-      width: 70%; } }

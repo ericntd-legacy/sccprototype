@@ -23,21 +23,3 @@ $footer-link-col-count: 2;
 
   }
 }
-
-@media screen and (max-width: 768px) {
-  .row-offcanvas {
-    .navbar {
-      width: 0;
-    }
-    .content {
-      width: 100%;
-    }
-  }
-  .row-offcanvas-right.active {
-      left: 0;
-      .navbar {
-        right:0;
-        width: 70%;
-      }
-  }
-}
