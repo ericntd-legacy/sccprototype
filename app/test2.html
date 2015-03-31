@@ -1,0 +1,148 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/aetles/pen/hEdGm">
+
+<script src="http://s.codepen.io/assets/libs/modernizr.js"></script><link rel="stylesheet prefetch" href="http://cdn.foundation5.zurb.com/foundation.css">
+<style class="cp-pen-styles">footer {
+  background: red;
+  padding: 20px;
+}
+
+body {
+  height: auto;
+}</style><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head><body>
+<div class="off-canvas-wrap" data-offcanvas="">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#" aria-expanded="false"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">Off canvas test with body height set to "auto"</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#" aria-expanded="false"><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Off canvas left</label></li>
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Off canvas right</label></li>
+         <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+     </ul>
+    </aside>
+
+    <section class="main-section">
+  <div class="row">
+  <div class="large-6 columns">
+    <p>Lorizzle ipsum dolor sit cool, consectetuer adipiscing crackalackin. Nullizzle sapien velizzle, volutpizzle, suscipizzle dang, doggy vizzle, fizzle. Pellentesque shut the shizzle up tortor. Sed shiznit. Fusce izzle dolizzle dapibizzle turpis tempizzle tempizzle. Maurizzle pellentesque nizzle owned turpizzle. </p>
+    <p>Boofron izzle uhuh ... yih!. Crackalackin eleifend rhoncizzle check out this. In hac fo shizzle platea dictumst. Daahng dawg dapibizzle. Curabitur tellus ghetto, pretium eu, mattizzle cool, things ghetto, nunc. Dizzle cool. Integer semper velit sizzle shit.</p>
+    </div>
+  <div class="large-6 columns">
+    <p>Sizzle shizzle my nizzle crocodizzle. Aliquizzle sheezy massa check it out maurizzle. Hizzle funky fresh ipsum primizzle in faucibus orci luctizzle izzle ultricizzle break it down cubilia Check out this; Aenizzle vestibulizzle. Pellentesque i saw beyonces tizzles and my pizzle went crizzle morbi gangsta senectus get down get down you son of a bizzle gizzle malesuada fames tellivizzle crazy egestizzle.</p>
+    <p>Gangsta tempizzle away stuff. Dawg erizzle volutpat. Vivamizzle brizzle enim, owned izzle, break yo neck, yall a, fringilla vizzle, ma nizzle.</p>
+ </div>
+</div>
+   </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+<footer style="margin-top:9px;">
+  Sticky Footer! Works only when body height is auto, not 100%.
+    </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+<script>
+$(document).foundation();
+
+/*!
+ * jQuery Sticky Footer 1.1
+ * Corey Snyder
+ * http://tangerineindustries.com
+ *
+ * Released under the MIT license
+ *
+ * Copyright 2013 Corey Snyder.
+ *
+ * Date: Thu Jan 22 2013 13:34:00 GMT-0630 (Eastern Daylight Time)
+ * Modification for jquery 1.9+ Tue May 7 2013
+ * Modification for non-jquery, removed all, now classic JS Wed Jun 12 2013
+ */
+
+window.onload = function() {
+	stickyFooter();
+
+	//you can either uncomment and allow the setInterval to auto correct the footer
+	//or call stickyFooter() if you have major DOM changes
+	//setInterval(checkForDOMChange, 1000);
+};
+
+//check for changes to the DOM
+function checkForDOMChange() {
+	stickyFooter();
+}
+
+//check for resize event if not IE 9 or greater
+window.onresize = function() {
+	stickyFooter();
+}
+
+//lets get the marginTop for the <footer>
+function getCSS(element, property) {
+
+  var elem = document.getElementsByTagName(element)[0];
+  var css = null;
+
+  if (elem.currentStyle) {
+    css = elem.currentStyle[property];
+
+  } else if (window.getComputedStyle) {
+	css = document.defaultView.getComputedStyle(elem, null).
+	getPropertyValue(property);
+  }
+
+  return css;
+
+}
+
+function stickyFooter() {
+
+	if (document.getElementsByTagName("footer")[0].getAttribute("style") != null) {
+		document.getElementsByTagName("footer")[0].removeAttribute("style");
+	}
+
+	if (window.innerHeight != document.body.offsetHeight) {
+		var offset = window.innerHeight - document.body.offsetHeight;
+		var current = getCSS("footer", "margin-top");
+
+		if (isNaN(current) == true) {
+			document.getElementsByTagName("footer")[0].setAttribute("style","margin-top:0px;");
+			current = 0;
+		} else {
+			current = parseInt(current);
+		}
+
+		if (current+offset > parseInt(getCSS("footer", "margin-top"))) {
+			document.getElementsByTagName("footer")[0].setAttribute("style","margin-top:"+(current+offset)+"px;");
+		}
+	}
+}
+
+/*
+! end sticky footer
+*/
+
+//@ sourceURL=pen.js
+</script>
+<script src="http://codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+</body></html>

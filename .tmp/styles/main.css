@@ -1,15 +1,182 @@
-.footer ul.menu-footer {
+html {
+  position: relative;
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  font-family: Open Sans, sans-serif;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  min-height: 100%; }
+
+a {
+  color: black; }
+
+a:hover {
+  text-decoration: none; }
+
+a:visited {
+  color: black; }
+
+a#logo {
+  display: block;
+  text-align: center; }
+
+ul {
   list-style: none;
-  padding-left: 0;
-  float: left;
+  padding-left: 0; }
+
+h2 {
+  background-color: #9a6d18;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px; }
+
+.container {
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding: 0; }
+
+.navbar-default {
+  background-color: white;
+  border: none; }
+
+@media (min-width: 769px) {
+  .navbar-nav {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Roboto Condensed, sans-serif; }
+    .navbar-nav > li {
+      width: 9.09091%; }
+      .navbar-nav > li > a {
+        text-align: center;
+        border-bottom: 3px solid white;
+        padding: 5px; }
+      .navbar-nav > li > a.btn-gold {
+        background-color: #a08a25;
+        color: white;
+        border-bottom: 3px solid #a08a25; }
+      .navbar-nav > li > a:hover {
+        border-bottom: 3px solid #a08a25; }
+
+  .main-action {
+    display: none; }
+
+  .navbar-collapse.collapse {
+    padding: 0; }
+
+  #homepage img#branding-img {
+    margin-bottom: -6px; }
+  #homepage #highlights {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    padding-left: 3px; }
+    #homepage #highlights ul {
+      height: 100%; }
+      #homepage #highlights ul li {
+        height: 33.33333%;
+        margin-bottom: 3px; }
+        #homepage #highlights ul li a {
+          display: block;
+          height: 100%;
+          background-image: url("images/membership.jpg");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-color: #f8f8f8;
+          padding-left: 40%;
+          padding-top: 5%;
+          color: black;
+          font-size: 24px;
+          font-family: Roboto Condensed;
+          font-weight: 600; }
+  #homepage #newsnevents {
+    padding-left: 10px; } }
+/* Small Devices, Tablets */
+@media screen and (max-width: 768px) {
+  .row-offcanvas .navbar {
+    width: 0; }
+  .row-offcanvas .content {
+    width: 100%;
+    margin: 50px; }
+
+  .row-offcanvas-right.active {
+    left: 0; }
+    .row-offcanvas-right.active .navbar {
+      right: 0;
+      width: 70%; }
+
+  .navbar-default .navbar-brand {
+    position: fixed;
+    top: 0;
+    left: 0; }
+
+  a#logo {
+    height: 70px; } }
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto; }
+
+#push {
+  height: 60px; }
+
+footer {
+  background-color: #9a6d18;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  bottom: 0;
   width: 100%; }
-  .footer ul.menu-footer li.menu-item-has-children {
-    width: 50%;
-    float: left; }
-    .footer ul.menu-footer li.menu-item-has-children ul {
-      list-style: none;
-      padding-left: 0;
-      float: left;
-      width: 100%; }
-      .footer ul.menu-footer li.menu-item-has-children ul li {
-        width: 100%; }
+  footer .container.footer > ul > li a {
+    display: block; }
+  footer .container.footer > ul > li .dropdown-menu {
+    display: block;
+    position: relative;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #9a6d18; }
+    footer .container.footer > ul > li .dropdown-menu > li > a {
+      padding: 0;
+      text-transform: none; }
+
+.heading, footer .container.footer > ul > li {
+  font-family: Roboto Condensed, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }

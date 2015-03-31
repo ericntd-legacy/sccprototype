@@ -1,79 +1,79 @@
-/*
- * Off Canvas navbar toggle right
- * --------------------------------------------------
- */
-
-@media screen and (max-width: 768px) {
-  .row-offcanvas {
-    position: relative;
-    .collapsing {
-        -webkit-transition: none 0;
-        -moz-transition: none 0;
-        transition: none 0;
-    }
-    .navbar {
-        position: absolute;
-        z-index: 2;
-        right:0;
-        height:100%;
-        width:55px;
-        border:0;
-    }
-    .navbar-toggle {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-    .content {
-        width:calc(100% - 60px);
-    }
-  }
-  .row-offcanvas-right.active {
-    left: -30%;
-    .navbar {
-        position: absolute;
-        z-index: 2;
-        right: -28.4%;
-        width:40%;
-    }
-    .navbar-collapse {
-        position: relative;
-        width: 100%;
-    }
-  }
-    // .row-offcanvas .collapsing {
-    //     -webkit-transition: none 0;
-    //     -moz-transition: none 0;
-    //     transition: none 0;
-    // }
-    // .row-offcanvas .navbar {
-    //     position: absolute;
-    //     z-index: 2;
-    //     right:0;
-    //     height:100%;
-    //     width:55px;
-    //     border:0;
-    // }
-    // .row-offcanvas .navbar-toggle {
-    //     margin-right: 5px;
-    //     margin-left: 5px;
-    // }
-    // .row-offcanvas {
-    //     position: relative;
-    // }
-    // .row-offcanvas-right.active .navbar {
-    //     position: absolute;
-    //     z-index: 2;
-    //     right: -28.4%;
-    //     width:40%;
-    // }
-    // .row-offcanvas-right.active {
-    //     left: -30%;
-    // }
-    // .row-offcanvas-right.active .navbar-collapse {
-    //     position: relative;
-    //     width: 100%;
-    // }
-    // .row-offcanvas .content {
-    //     width:calc(100% - 60px);
-    // }
-}
+// /*
+//  * Off Canvas navbar toggle right
+//  * --------------------------------------------------
+//  */
+//
+// @media screen and (max-width: 768px) {
+//   .row-offcanvas {
+//     position: relative;
+//     .collapsing {
+//         -webkit-transition: none 0;
+//         -moz-transition: none 0;
+//         transition: none 0;
+//     }
+//     .navbar {
+//         position: absolute;
+//         z-index: 2;
+//         right:0;
+//         height:100%;
+//         width:55px;
+//         border:0;
+//     }
+//     .navbar-toggle {
+//         margin-right: 5px;
+//         margin-left: 5px;
+//     }
+//     .content {
+//         width:calc(100% - 60px);
+//     }
+//   }
+//   .row-offcanvas-right.active {
+//     left: -30%;
+//     .navbar {
+//         position: absolute;
+//         z-index: 2;
+//         right: -28.4%;
+//         width:40%;
+//     }
+//     .navbar-collapse {
+//         position: relative;
+//         width: 100%;
+//     }
+//   }
+//     // .row-offcanvas .collapsing {
+//     //     -webkit-transition: none 0;
+//     //     -moz-transition: none 0;
+//     //     transition: none 0;
+//     // }
+//     // .row-offcanvas .navbar {
+//     //     position: absolute;
+//     //     z-index: 2;
+//     //     right:0;
+//     //     height:100%;
+//     //     width:55px;
+//     //     border:0;
+//     // }
+//     // .row-offcanvas .navbar-toggle {
+//     //     margin-right: 5px;
+//     //     margin-left: 5px;
+//     // }
+//     // .row-offcanvas {
+//     //     position: relative;
+//     // }
+//     // .row-offcanvas-right.active .navbar {
+//     //     position: absolute;
+//     //     z-index: 2;
+//     //     right: -28.4%;
+//     //     width:40%;
+//     // }
+//     // .row-offcanvas-right.active {
+//     //     left: -30%;
+//     // }
+//     // .row-offcanvas-right.active .navbar-collapse {
+//     //     position: relative;
+//     //     width: 100%;
+//     // }
+//     // .row-offcanvas .content {
+//     //     width:calc(100% - 60px);
+//     // }
+// }

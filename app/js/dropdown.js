@@ -31,7 +31,7 @@ Make dropdown menu shows on mouse hover
 */
 $(function(){
 
-    $(".dropdown").hover(
+    $(".navbar .dropdown").hover(
 
       function() {
         if ($(window).width() > 768) {

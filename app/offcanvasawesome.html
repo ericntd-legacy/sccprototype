@@ -1,103 +1,215 @@
-
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="../dist/css/bootstrap.css" rel="stylesheet">
+  <link href="../dist/css/bootstrap.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="../dist/css/offcanvas1.css" type="text/css"/> -->
-  <link rel="stylesheet" href="dropdown.css" type="text/css"/>
-  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="stylesheet" href="dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+
 <body>
+  <div id="wrap">
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="sidebar-offcanvas">
+          <div class="navbar navbar-default">
+            <a class="navbar-brand hidden-xs" href="#">Brand</a>
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
 
-  <div class="container">
-    <div class="row row-offcanvas row-offcanvas-right">
-      <div class="sidebar-offcanvas">
-        <div class="navbar navbar-default">
-          <a class="navbar-brand hidden-xs" href="#">Brand</a>
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">More</a></li>
+                <li class="dropdown">
+                  <a href="http://google.com" class="dropdown-toggle disabled" data-toggle="dropdown" aria-expanded="true">Main Action <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="main-action"><a href="#">Main Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Options</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">More</a></li>
-              <li class="dropdown">
-                <a href="http://google.com" class="dropdown-toggle disabled" data-toggle="dropdown" aria-expanded="true">Main Action <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="main-action"><a href="#">Main Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Options</a></li>
-            </ul>
+        <div class="col-xs-12 content">
+          <div class="row">
+            <div class="jumbotron">
+              <h2>Off-canvas Navbar Example</h2>
+              <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-6">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+            <div class="col-sm-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+            <div class="col-sm-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+            <div class="col-sm-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+            <div class="col-sm-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+            <div class="col-sm-6 col-lg-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#">View details »</a></p>
+            </div>
+            <!--/span-->
+
           </div>
         </div>
       </div>
 
-      <div class="col-xs-12 content">
-        <div class="row">
-          <div class="jumbotron">
-            <h2>Off-canvas Navbar Example</h2>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-          </div>
+      <hr>
 
-          <div class="col-sm-6 col-lg-6">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
-          <div class="col-sm-6 col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
-          <div class="col-sm-6 col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
-          <div class="col-sm-6 col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
-          <div class="col-sm-6 col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
-          <div class="col-sm-6 col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#">View details »</a></p>
-          </div><!--/span-->
+      <a href="http://bootply.com/111223">Edit on Bootply</a> - <a href="http://bootply.com/templates" target="ext">Bootstrap Templates</a>
+
+      <hr>
+
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <div class="container">
+      <ul class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+
+        <li class="dropdown col-lg-3 col-md-4">
+          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/happening">News &amp; Events</a>
+          <ul class="dropdown-menu">
+            <!-- In offcanvas mode, workaround to handle the main menu item click -->
+            <li class="main-action"><a href="/happening">News &amp; Events</a></li>
+            <li><a href="">Sports1</a></li>
+            <li><a href="">Social Events</a></li>
+            <li><a href="">F&amp;B</a></li>
+            <li><a href="">General Annoucements</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="dropdown col-lg-3 col-md-4">
+          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/membership">Membership</a>
+          <ul class="dropdown-menu">
+            <!-- In offcanvas mode, workaround to handle the main menu item click -->
+            <li class="main-action"><a href="/membership">Membership</a></li>
+            <li><a href="">Prospective Members</a></li>
+            <li><a href="/#">Existing members</a></li>
+            <li><a href="/#">Reciprocal Clubs</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="dropdown col-lg-3 col-md-4">
+          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/sports">Sports</a>
+          <ul class="dropdown-menu">
+            <!-- In offcanvas mode, workaround to handle the main menu item click -->
+            <li class="main-action"><a href="/sports">Sports</a></li>
+            <li><a href="/#">Sections</a></li>
+            <li><a href="/#">Sponsorship</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="dropdown col-lg-3 col-md-4">
+          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/fnb">Wine &amp; Dine</a>
+          <ul class="dropdown-menu">
+            <!-- In offcanvas mode, workaround to handle the main menu item click -->
+            <li class="main-action"><a href="/fnb">Wine &amp; Dine</a></li>
+            <li><a href="/#">Restaurants</a></li>
+            <li><a href="/#">Bottle Shops</a></li>
+            <li><a href="/#">Banqueting</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="col-lg-3 col-md-4">
+          <a href="/facilities">Facilities</a>
+        </li>
+
+
+
+        <li class="col-lg-3 col-md-4">
+          <a href="/souvenirs">Souvenirs</a>
+        </li>
+
+
+
+        <li class="col-lg-3 col-md-4">
+          <a href="/gallery">Gallery</a>
+        </li>
+
+
+
+        <li class="dropdown col-lg-3 col-md-4">
+          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/about">About Us</a>
+          <ul class="dropdown-menu">
+            <!-- In offcanvas mode, workaround to handle the main menu item click -->
+            <li class="main-action"><a href="/about">About Us</a></li>
+            <li><a href="/#">Club History</a></li>
+            <li><a href="/#">Our People</a></li>
+            <li><a href="/#">Publications</a></li>
+            <li><a href="/#">Career</a></li>
+          </ul>
+        </li>
+
+
+      </ul>
+      <div id="search">
+        <form id="searchSubmit" action="/search" method="get" onsubmit="sanitizeRequestParam(document.forms['searchSubmit']['query'], 'Search')" />
+        <p>
+          <input class="search-field gray" type="text" name="query" value="Search" />
+          <input type="submit" value="Search" class="search-button" />
+        </p>
+        </form>
+        <div>
+          <span class="heading">Contact us</span>
+          <br />
+          <p>Connaught Drive Singapore 179681
+            <br />Telephone: 65 6338 9271
+            <br />Fax: 65 6337 0119</p>
 
         </div>
       </div>
     </div>
-
-    <hr>
-
-    <a href="http://bootply.com/111223">Edit on Bootply</a> - <a href="http://bootply.com/templates" target="ext">Bootstrap Templates</a>
-
-    <hr>
-
-  </div>
-
-
+  </footer>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -107,4 +219,5 @@
 
   <!-- Grunt live reload -->
 </body>
+
 </html>
