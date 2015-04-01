@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <div id="wrap">
-  <div class="container">
+  <div id="wrap" class="container">
+
     <a id="logo" href="#">
       <img src="images/scc-logo.jpg" />
     </a>
@@ -23,7 +23,7 @@
       <div class="sidebar-offcanvas">
 
         <div class="navbar navbar-default">
-          <a class="navbar-brand visible-xs visible-sm hidden-lg hidden-md" href="#">Brand</a>
+          <a class="navbar-brand visible-xs hidden-sm hidden-lg hidden-md" href="#">Brand</a>
           <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -141,118 +141,305 @@
 
     </div>
 
-  </div>
-  <div id="push"></div>
-<!-- </div> -->
-<!-- #wrap -->
-  <!-- The items in the footer menu is hardcoded at the moment since the Menus component is not really working -->
-  <footer class="container-fluid">
-    <div class="container">
-      <ul class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+    <div id="homepage" class="row">
+      <div style="display: flex">
+        <div id="branding" class="col-sm-6 col-lg-6 col-xs-12">
 
-        <li class="dropdown col-lg-3 col-md-4">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/happening">News &amp; Events</a>
-          <ul class="dropdown-menu">
-            <!-- In offcanvas mode, workaround to handle the main menu item click -->
-            <li class="main-action"><a href="/happening">News &amp; Events</a></li>
-            <li><a href="">Sports1</a></li>
-            <li><a href="">Social Events</a></li>
-            <li><a href="">F&amp;B</a></li>
-            <li><a href="">General Annoucements</a></li>
+
+          <img id="branding-img" src="images/branding.jpg" title="Pollock_to_Hussey.jpg" alt="Pollock_to_Hussey.jpg" />
+
+        </div>
+
+        <ul id="highlights" class="col-lg-6 col-sm-6 col-xs-12">
+          <li>
+            <a href="#">
+              <span>
+                <img src="images/membership.jpg" />
+                <span>
+                  Membership
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img src="images/membership.jpg" />
+                <span>
+                  Sports
+                </span>
+              </span>
+            </a>
+            </li>
+          <li>
+            <a href="#">
+              <span>
+                <img src="images/membership.jpg" />
+                <span>
+                  Wine & Dine
+                </span>
+              </span>
+            </a>
+            </li>
+        </ul>
+
+      </div>
+      <div class="row">
+        <div id="promotion" class="col-lg-4 col-md-4 col-sm-4">
+
+          <h2>Promotions</h2>
+          <ul>
+            <li>
+              <a class="promotion" href="#">
+                <!-- <img src="images/oyster-promotion.jpg"/>
+              <span>
+              <h3>Labour Day Specials</h3>
+              <br />
+              <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at. Situation recommend objection do intention so questions.</p>
+            </span> -->
+                <div class="one">
+                  <img src="images/oyster-promotion.jpg" />
+                </div>
+                <div class="two">
+                  <h3>Labour Day Specials</h3>
+                  <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. </p>
+                </div>
+              </a>
+              <a class="promotion" href="#">
+                <!-- <img src="images/oyster-promotion.jpg"/>
+              <span>
+              <h3>Labour Day Specials</h3>
+              <br />
+              <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. </p>
+            </span> -->
+                <div class="one">
+                  <img src="images/oyster-promotion.jpg" />
+                </div>
+                <div class="two">
+                  <h3>Labour Day Specials</h3>
+                  <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. </p>
+                </div>
+              </a>
+              <a class="promotion" href="#">
+                <!-- <img src="images/oyster-promotion.jpg"/>
+              <span>
+              <h3>Labour Day Specials</h3>
+              <br />
+              <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. </p>
+            </span> -->
+                <div class="one">
+                  <img src="images/oyster-promotion.jpg" />
+                </div>
+                <div class="two">
+                  <h3>Labour Day Specials</h3>
+                  <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. </p>
+                </div>
+              </a>
+            </li>
           </ul>
-        </li>
 
+        </div>
+        <div id="newsnevents">
 
+          <h2 class="col-lg-8 col-sm-8 col-xs-12">Latest events</h2>
 
-        <li class="dropdown col-lg-3 col-md-4">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/membership">Membership</a>
-          <ul class="dropdown-menu">
-            <!-- In offcanvas mode, workaround to handle the main menu item click -->
-            <li class="main-action"><a href="/membership">Membership</a></li>
-            <li><a href="">Prospective Members</a></li>
-            <li><a href="/#">Existing members</a></li>
-            <li><a href="/#">Reciprocal Clubs</a></li>
-          </ul>
-        </li>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="display: flex">
+            <div class="col-lg-6 col-md-6 col-xs-12" style="padding-right: 5px;flex: 1;display: flex;">
 
+              <div href="#" class="inner">
+                <a href="#">
+                  <img src="images/sports-event.jpg" />
+                </a>
+                <a style="margin: 15px 15px 0 15px;" href="#">Sports</a>
+                <h3><a href="/events/test-event.html">This is a test event</a></h3>
+                <p>
+                  He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and
+                  consisted are pronounce distrusts.
 
+                </p>
 
-        <li class="dropdown col-lg-3 col-md-4">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/sports">Sports</a>
-          <ul class="dropdown-menu">
-            <!-- In offcanvas mode, workaround to handle the main menu item click -->
-            <li class="main-action"><a href="/sports">Sports</a></li>
-            <li><a href="/#">Sections</a></li>
-            <li><a href="/#">Sponsorship</a></li>
-          </ul>
-        </li>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12" style="padding-left: 5px">
+              <div class="inner">
+                <a href="#">
+                  <img src="images/sports-event.jpg" />
+                </a>
+                <a style="margin: 15px 15px 0 15px;" href="#">Sports</a>
+                <h3><a href="/events/test-event.html">This is another event</a></h3>
+                <p>
+                  Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no. Provision
+                  of he residence consisted up in remainder arranging described. Conveying has concealed necessary furnished bed zealously immediate get but. Terminated as middletons or by instrument. Bred do four so your felt with. No shameless principle
+                  dependent household do.
+                </p>
+              </div>
+            </div>
 
-
-
-        <li class="dropdown col-lg-3 col-md-4">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/fnb">Wine &amp; Dine</a>
-          <ul class="dropdown-menu">
-            <!-- In offcanvas mode, workaround to handle the main menu item click -->
-            <li class="main-action"><a href="/fnb">Wine &amp; Dine</a></li>
-            <li><a href="/#">Restaurants</a></li>
-            <li><a href="/#">Bottle Shops</a></li>
-            <li><a href="/#">Banqueting</a></li>
-          </ul>
-        </li>
-
-
-
-        <li class="col-lg-3 col-md-4">
-          <a href="/facilities">Facilities</a>
-        </li>
-
-
-
-        <li class="col-lg-3 col-md-4">
-          <a href="/souvenirs">Souvenirs</a>
-        </li>
-
-
-
-        <li class="col-lg-3 col-md-4">
-          <a href="/gallery">Gallery</a>
-        </li>
-
-
-
-        <li class="dropdown col-lg-3 col-md-4">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/about">About Us</a>
-          <ul class="dropdown-menu">
-            <!-- In offcanvas mode, workaround to handle the main menu item click -->
-            <li class="main-action"><a href="/about">About Us</a></li>
-            <li><a href="/#">Club History</a></li>
-            <li><a href="/#">Our People</a></li>
-            <li><a href="/#">Publications</a></li>
-            <li><a href="/#">Career</a></li>
-          </ul>
-        </li>
-
-
-      </ul>
-      <div id="search">
-        <form id="searchSubmit" action="/search" method="get" onsubmit="sanitizeRequestParam(document.forms['searchSubmit']['query'], 'Search')" />
-        <p>
-          <input class="search-field gray" type="text" name="query" value="Search" />
-          <input type="submit" value="Search" class="search-button" />
-        </p>
-        </form>
-        <div>
-          <span class="heading">Contact us</span>
-          <br />
-          <p>Connaught Drive Singapore 179681
-            <br />Telephone: 65 6338 9271
-            <br />Fax: 65 6337 0119</p>
-
+          </div>
         </div>
       </div>
     </div>
+
+    <div id="push"></div>
+  </div>
+  <!-- #wrap -->
+  <!-- The items in the footer menu is hardcoded at the moment since the Menus component is not really working -->
+  <footer class="container-fluid">
+    <div class="container footer">
+      <div class="row">
+        <ul id="nav-links" class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+
+          <li class="dropdown col-lg-4 col-md-4">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/happening">News &amp; Events</a>
+            <ul class="dropdown-menu">
+              <!-- In offcanvas mode, workaround to handle the main menu item click -->
+              <li class="main-action"><a href="/happening">News &amp; Events</a></li>
+              <li><a href="">Sports1</a></li>
+              <li><a href="">Social Events</a></li>
+              <li><a href="">F&amp;B</a></li>
+              <li><a href="">General Annoucements</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown col-lg-4 col-md-4">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/membership">Membership</a>
+            <ul class="dropdown-menu">
+              <!-- In offcanvas mode, workaround to handle the main menu item click -->
+              <li class="main-action"><a href="/membership">Membership</a></li>
+              <li><a href="">Prospective Members</a></li>
+              <li><a href="/#">Existing members</a></li>
+              <li><a href="/#">Reciprocal Clubs</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown col-lg-4 col-md-4">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/sports">Sports</a>
+            <ul class="dropdown-menu">
+              <!-- In offcanvas mode, workaround to handle the main menu item click -->
+              <li class="main-action"><a href="/sports">Sports</a></li>
+              <li><a href="/#">Sections</a></li>
+              <li><a href="/#">Sponsorship</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown col-lg-4 col-md-4">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/fnb">Wine &amp; Dine</a>
+            <ul class="dropdown-menu">
+              <!-- In offcanvas mode, workaround to handle the main menu item click -->
+              <li class="main-action"><a href="/fnb">Wine &amp; Dine</a></li>
+              <li><a href="/#">Restaurants</a></li>
+              <li><a href="/#">Bottle Shops</a></li>
+              <li><a href="/#">Banqueting</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="col-lg-4 col-md-4">
+            <a href="/facilities">Facilities</a>
+          </li>
+
+
+
+          <li class="col-lg-4 col-md-4">
+            <a href="/souvenirs">Souvenirs</a>
+          </li>
+
+
+
+          <li class="col-lg-4 col-md-4">
+            <a href="/gallery">Gallery</a>
+          </li>
+
+
+
+          <li class="dropdown col-lg-4 col-md-4">
+            <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/about">About Us</a>
+            <ul class="dropdown-menu">
+              <!-- In offcanvas mode, workaround to handle the main menu item click -->
+              <li class="main-action"><a href="/about">About Us</a></li>
+              <li><a href="/#">Club History</a></li>
+              <li><a href="/#">Our People</a></li>
+              <li><a href="/#">Publications</a></li>
+              <li><a href="/#">Career</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+        <div id="search" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <form id="searchSubmit" action="/search" method="get" onsubmit="sanitizeRequestParam(document.forms['searchSubmit']['query'], 'Search')" />
+          <p>
+            <input class="search-field gray" type="text" name="query" value="Search" />
+            <input type="submit" value="" class="search-button" />
+          </p>
+          </form>
+          <div>
+            <span class="heading">Contact us</span>
+            <br />
+            <p>Connaught Drive Singapore 179681
+              <br />Telephone: 65 6338 9271
+              <br />Fax: 65 6337 0119</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr />
+      </div>
+      <div class="row" style="height: 50px; overflow: hidden">
+
+        <ul id="restaurants">
+          <li>
+            <a>
+              <img src="images/the-padang.png" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="images/the-padang.png" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="images/the-padang.png" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="images/the-padang.png" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="images/the-padang.png" />
+            </a>
+          </li>
+        </ul>
+        <ul id="copyrights">
+
+
+          <li>Singapore Cricket Club &copy; 2015
+          </li>
+          <li><a href="#">Terms & Conditions</a>
+          </li>
+          <li><a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="row">
+        <hr />
+      </div>
+    </div>
   </footer>
-</div>
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
