@@ -299,11 +299,18 @@ footer {
       padding-left: 0; }
       #homepage > .row #newsnevents h2 {
         padding: 10px 20px; }
-      #homepage > .row #newsnevents > div {
-        display: block; }
-        #homepage > .row #newsnevents > div > div {
-          padding-left: 0;
-          padding-right: 0; }
+      #homepage > .row #newsnevents #newsnevents > ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #homepage > .row #newsnevents #newsnevents > ul > li {
+          margin-bottom: 5px; }
       #homepage > .row #newsnevents .inner {
         border: 1px solid lightgrey; }
         #homepage > .row #newsnevents .inner a img {
@@ -358,31 +365,23 @@ footer {
     #homepage > .row #highlights > li a {
       height: auto; }
     #homepage > .row #promotion {
-      padding-right: 10px; }
-    #homepage > .row #newsnevents > div {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      #homepage > .row #newsnevents > div > div {
-        margin-bottom: 5px; } }
+      padding-right: 10px; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   body {
     padding-bottom: 800px; }
 
-  #homepage > .row #newsnevents > div {
+  #homepage > .row #newsnevents > ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; }
-    #homepage > .row #newsnevents > div > div:last-of-type {
+    #homepage > .row #newsnevents > ul > li:last-of-type {
       padding-left: 3px; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
@@ -391,6 +390,9 @@ footer {
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #wrap, #homepage, footer > .container {
+    width: 100%; } }
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
